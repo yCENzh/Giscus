@@ -1,5 +1,9 @@
-/* Giscus评论区自定义样式 - 简洁风格，与Fuwari主题协调 */
+/*! MIT License
+ * Copyright (c) 2018 GitHub Inc.
+ * https://github.com/primer/primitives/blob/main/LICENSE
+ */
 
+/* 亮色模式样式 - 简洁风格 */
 main {
   /* 语法高亮颜色 */
   --color-prettylights-syntax-comment: #6e7781;
@@ -116,8 +120,21 @@ main {
   --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-1);
 }
 
-/* 暗色模式 */
+/* 加载动画容器 */
+main .pagination-loader-container {
+  background-image: url(https://github.com/images/modules/pulls/progressive-disclosure-line.svg);
+}
+
+main .gsc-loading-image {
+  background-image: url(https://github.githubassets.com/images/mona-loading-default.gif);
+}
+
+/* 暗色模式样式 - 简洁风格 */
 @media (prefers-color-scheme: dark) {
+  /*! MIT License
+   * Copyright (c) 2018 GitHub Inc.
+   * https://github.com/primer/primitives/blob/main/LICENSE
+   */
   main {
     /* 语法高亮颜色 */
     --color-prettylights-syntax-comment: #8b949e;
@@ -233,19 +250,8 @@ main {
     --color-social-reaction-bg-hover: var(--color-scale-gray-7);
     --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
   }
-}
-
-/* 加载动画容器 */
-main .pagination-loader-container {
-  background-image: url(https://github.com/images/modules/pulls/progressive-disclosure-line.svg);
-}
-
-main .gsc-loading-image {
-  background-image: url(https://github.githubassets.com/images/mona-loading-default.gif);
-}
-
-/* 暗色模式加载动画 */
-@media (prefers-color-scheme: dark) {
+  
+  /* 暗色模式加载动画容器 */
   main .pagination-loader-container {
     background-image: url(https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg);
   }
